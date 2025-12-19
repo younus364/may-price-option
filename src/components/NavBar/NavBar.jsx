@@ -14,7 +14,7 @@ const NavBar = () => {
     ];
     const [open,setOpen]= useState(false);
     return (
-        <nav>
+        <nav className="text-black bg-yellow-200 p-6">
             <div className="md:hidden" onClick={()=>setOpen(!open)}>
                 {
                     open === true ? <IoMdClose className=" text-xl"></IoMdClose> :<RiMenu2Fill className=" text-xl" />  
@@ -22,7 +22,7 @@ const NavBar = () => {
                 
                
             </div>
-           <ul className="md:flex">
+           <ul className={ `${open? "top-16": "-top-60"} md:flex md:static duration-1000 absolute bg-yellow-200 px-6 `}>
             { 
            routes.map(route => <Link key={route.id} route={route}></Link>)
            }

@@ -1,5 +1,6 @@
 
 import './App.css'
+import BarChart from './components/BarChart/BarChart'
 import LineChart from './components/LineChart/LineChart'
 // import DaisuyNav from './components/DaisuyNav/DaisuyNav'
 import NavBar from './components/NavBar/NavBar'
@@ -19,6 +20,7 @@ function App() {
       <PriceOprions></PriceOprions>
       {/* <Phones></Phones> */}
       <LineChart></LineChart>
+      <BarChart></BarChart>
    
      
     </>

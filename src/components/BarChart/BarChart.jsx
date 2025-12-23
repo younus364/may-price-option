@@ -20,8 +20,8 @@ const BarChart = () => {
                 <YAxis width="auto" />
                  <Tooltip />
                 <Bar dataKey="math" fill='green' stroke='blue'></Bar>
-                <Bar dataKey="physics" fill='green' stroke='blue'></Bar>
-                <Bar dataKey="chemistry" fill='green' stroke='blue'></Bar>
+                <Bar dataKey="physics" fill='green' stroke='red'></Bar>
+                <Bar dataKey="chemistry" fill='green' stroke='green'></Bar>
                 
             </BcChart>
         </div>
